@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<header>
+  <h2>Create Account</h2>
+</header>
+
+<div class="container">
+
+  <form>
+    <h3>Register</h3>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="confirm Password" required>
+
+    <label>Select Role</label>
+    <select required>
+      <option value="">Choose Role</option>
+      <option value="client">Client</option>
+      <option value="provider">Service Provider</option>
+    </select>
+
+    <button type="button" onclick="registerUser()">Create Account</button>
+
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </form>
+
+</div>
+
+<script src="js/register.js"></script>
+</body>
+</html>
